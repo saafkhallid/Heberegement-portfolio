@@ -1,0 +1,262 @@
+
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: nunito, sans-serif;
+  
+}
+
+
+
+@import '_menu.scss';
+@import '_footer.scss';
+@import '_headerHero';
+
+
+.sectionlogin{
+    margin-top: 10px;
+    .sectionlogin-photo {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .title{
+        position: absolute;
+        top:70%;
+        color:#ffff;
+        left: 50%;
+        font-size:50px;
+        font-weight: bold;
+        transform: translate(-50%,-50%);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+
+
+    }
+}
+
+.saaf{
+    height: 80vh;
+    margin: 0 auto;
+    
+
+}
+
+
+.container-register  {
+    margin:auto;
+    height: 99vh;
+    width:500px;
+    max-width:90%;
+    // margin-bottom: 30px;
+    padding-bottom: 100px;
+    // padding-top: 10%;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 24px;
+        color: black;
+        font-family: 'Signika', sans-serif;
+
+    }
+    .container-register__form{
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        // padding-top: 100px;
+        // background: rgba(243, 234, 234, 0.733);
+        border-radius: 4px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.048);
+        // padding-top: 400px;
+        .button-registre{
+            display: flex;
+        }
+    }
+     .form-control{
+         width: 100%;
+         height: 40px;
+         background: white;
+         border-radius: 4px;
+         border: 1px solid silver;
+         margin: 10px 0 18px 0;
+         padding: 0 10px;
+        
+     }
+
+}
+.container{
+
+
+    margin:auto;
+    height: 70vh;
+    width:500px;
+    max-width:90%;
+    // margin: 0 auto;
+    padding-bottom: 100px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 24px;
+        color: black;
+        font-family: 'Signika', sans-serif;
+
+    }
+    .container-forum{
+        margin: 0 auto;
+        width: 100%;
+        padding: 40px;
+        box-shadow: 0 16px 20px rgba(0, 0, 0, 0.048);
+
+        // padding-top: 100px;
+        // background-color: rgba(206, 29, 29, 0.918);
+        // background-color: rgba(238, 228, 228, 0.473);
+
+
+        border-radius: 4px;
+        // box-shadow: 0 8px 16px rgba(0, 0, 0, 0.048);
+        // padding-top: 400px;
+        .button-registre{
+            display: flex;
+        }
+    }
+     .form-control{
+         width: 100%;
+         height: 40px;
+         background: white;
+         border-radius: 4px;
+         border: 1px solid silver;
+         margin: 10px 0 18px 0;
+         padding: 0 10px;
+        
+     }
+
+}
+.container-register__form-info{
+    padding-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.form-group__user{
+    color: rgb(197, 143, 143);
+
+}
+
+   .btn {
+             margin-left: 50%;
+             transform: translate(-50%);
+             width: 200px;
+             height: 34px;
+             border: none;
+             outline: none;
+             background: rgb(38, 184, 82);
+             cursor: pointer;
+             font-size: 16px;
+             text-transform: uppercase;
+             color: white;
+             border-radius: 4px;
+             transition: .3s;
+             &:hover {
+                 opacity: .7;
+             }
+         }
+
+     .forgot{
+         margin-top:50px;
+     }  
+     .forg{
+         padding-top: 14px;
+         color: rgb(15, 10, 10);
+     }  
+     .forgot-ligne {
+         color: rgba(214, 25, 25, 0.473);
+         text-decoration: none;
+     }
+
+     .btn1 {
+       
+        width: 100px;
+        height: 34px;
+        border: none;
+        outline: none;
+        margin: 0 auto;
+        background: rgb(30, 204, 44);
+        cursor: pointer;
+        font-size: 17px;
+        text-transform: uppercase;
+        color: white;
+        border-radius: 4px;
+        transition: .3s;
+        &:hover {
+            opacity: .7;
+        }
+
+
+    }
+
+
+    @media only screen and (max-width:1400px) {
+       
+        .saaf{
+            height: 80vh;
+            .container{
+                height: 100vh;
+                margin: 0 auto;
+
+                .container-forum{
+                    width: 90%;
+                }
+            }
+        }
+        }
+      
+
+      
+    @media only screen and (max-width:800px) {
+        body {
+         width: 100%;
+         .container-register{
+             height: 60vh;
+            //  background-color: blue;
+         }
+         .saaf{
+            height:60vh;
+            .container{
+
+                .container-forum{
+                    width: 70%;
+                }
+            }
+         }
+         }
+       } 
+
+       @media only screen and (max-width:400px) {
+        body {
+         width: 100%;
+         .saaf{
+            // height:70vh;
+            .container-register{
+                width: 90%;
+            }
+            .container{
+                height:70vh;
+
+                .container-forum{
+                    width: 90%;
+                }
+            }
+         }
+         }
+       } 
+    
